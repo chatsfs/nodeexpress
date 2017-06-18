@@ -29,7 +29,7 @@ app.get('/blog/:title?', function(req, res){
 	}
 });
 
-app.listen(3000, function() {
+app.listen(80, function() {
 	console.log("The frontend server is running on port 3000!");
 });
 
