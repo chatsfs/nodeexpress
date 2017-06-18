@@ -28,8 +28,8 @@ app.get('/blog/:title?', function(req, res){
 		res.render('post', { post: post});
 	}
 });
-
-app.listen(80, function() {
+var port=process.env.PORT || 1337;
+app.listen(port, function() {
 	console.log("The frontend server is running on port 3000!");
 });
 
